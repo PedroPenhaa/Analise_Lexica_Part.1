@@ -101,6 +101,9 @@ F {printf("%11s:palavra_reservada:T_F\n", yytext);return T_F;}
 {numero} {printf("%11s:palavra_reservada:T_NUMERO\n", yytext);return T_NUMERO;}
 
 
+{espaco} /não faz nada/
+{novalinha} /não faz nada/
+
 "//".* /* comentario de linha */
 "/*" BEGIN(comentario);
 <comentario>"*/" BEGIN(INITIAL);
