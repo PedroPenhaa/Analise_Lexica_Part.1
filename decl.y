@@ -1,4 +1,33 @@
-%token T_PROGRAMA T_E T_INICIO T_FIM T_LEIA T_ESCREVA T_SE T_ENTAO T_SENAO T_FIMSE T_ENQTO T_FACA T_FIMENQTO T_MAIS T_MENOS T_VEZES T_DIV T_MAIOR T_MENOR T_IGUAL T_OU T_NAO T_ATRIB T_ABRE T_FECHA T_INTEIRO T_LOGICO T_V T_F T_IDENTIF T_NUMERO
+%token T_PROGRAMA
+       T_E 
+       T_INICIO 
+       T_FIM T_LEIA 
+       T_ESCREVA 
+       T_SE 
+       T_ENTAO 
+       T_SENAO 
+       T_FIMSE 
+       T_ENQTO 
+       T_FACA 
+       T_FIMENQTO 
+       T_MAIS 
+       T_MENOS 
+       T_VEZES 
+       T_DIV 
+       T_MAIOR 
+       T_MENOR 
+       T_IGUAL 
+       T_OU 
+       T_NAO 
+       T_ATRIB 
+       T_ABRE 
+       T_FECHA 
+       T_INTEIRO 
+       T_LOGICO 
+       T_V 
+       T_F 
+       T_IDENTIF 
+       T_NUMERO
 
 %{
     #include <stdio.h>
@@ -46,7 +75,6 @@ entrada_saida:leitura|escrita
     T_SENAO lista_comandos T_FIMSE;
     atribuicao:T_IDENTIF T_ATRIB expressao;
     expressao: expressao T_VEZES expressao
-             | expressao T_VEZES expressao
              | expressao T_MENOS expressao
              | expressao T_MAIOR expressao
              | expressao T_MENOR expressao

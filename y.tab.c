@@ -593,7 +593,7 @@ union yyalloc
 /* YYNNTS -- Number of nonterminals.  */
 #define YYNNTS  17
 /* YYNRULES -- Number of rules.  */
-#define YYNRULES  40
+#define YYNRULES  39
 /* YYNSTATES -- Number of states.  */
 #define YYNSTATES  68
 
@@ -650,8 +650,7 @@ static const yytype_int8 yyrline[] =
        0,    11,    11,    14,    18,    19,    24,    25,    28,    29,
       31,    32,    33,    34,    36,    37,    38,    39,    40,    40,
       41,    42,    43,    44,    45,    47,    48,    49,    50,    51,
-      52,    53,    54,    55,    56,    57,    58,    59,    60,    61,
-      62
+      52,    53,    54,    55,    56,    57,    58,    59,    60,    61
 };
 #endif
 
@@ -716,10 +715,10 @@ static const yytype_int8 yydefact[] =
        0,     0,     0,     5,     3,     1,     9,     8,     0,     4,
        0,    13,    11,     7,     0,     0,     0,     0,     0,     0,
       13,    14,    18,    19,    15,    16,    17,    10,     6,    20,
-       0,     0,    37,    38,    35,    36,    21,    34,     0,     0,
-       0,     2,    23,    12,    39,     0,     0,     0,     0,     0,
-       0,     0,     0,    13,    22,    25,    40,    32,    28,    26,
-      29,    30,    31,    33,     0,    13,     0,    24
+       0,     0,    36,    37,    34,    35,    21,    33,     0,     0,
+       0,     2,    23,    12,    38,     0,     0,     0,     0,     0,
+       0,     0,     0,    13,    22,    25,    39,    31,    27,    26,
+      28,    29,    30,    32,     0,    13,     0,    24
 };
 
 /* YYPGOTO[NTERM-NUM].  */
@@ -784,8 +783,7 @@ static const yytype_int8 yyr1[] =
        0,    34,    35,    36,    37,    37,    38,    38,    39,    39,
       40,    40,    41,    41,    42,    42,    42,    42,    43,    43,
       44,    45,    46,    46,    47,    48,    49,    49,    49,    49,
-      49,    49,    49,    49,    49,    50,    50,    50,    50,    50,
-      50
+      49,    49,    49,    49,    50,    50,    50,    50,    50,    50
 };
 
 /* YYR2[RULE-NUM] -- Number of symbols on the right-hand side of rule RULE-NUM.  */
@@ -794,8 +792,7 @@ static const yytype_int8 yyr2[] =
        0,     2,     5,     2,     1,     0,     3,     2,     1,     1,
        2,     1,     2,     0,     1,     1,     1,     1,     1,     1,
        2,     2,     3,     2,     7,     3,     3,     3,     3,     3,
-       3,     3,     3,     3,     1,     1,     1,     1,     1,     2,
-       3
+       3,     3,     3,     1,     1,     1,     1,     1,     2,     3
 };
 
 
@@ -1259,7 +1256,7 @@ yyreduce:
   switch (yyn)
     {
 
-#line 1263 "y.tab.c"
+#line 1260 "y.tab.c"
 
       default: break;
     }
@@ -1452,7 +1449,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 64 "decl.y"
+#line 63 "decl.y"
 
 
 extern int yylex();

@@ -96,10 +96,11 @@ inteiro {printf("%11s:palavra_reservada:T_INTEIRO\n", yytext);return T_INTEIRO;}
 logico {printf("%11s:palavra_reservada:T_LOGICO\n", yytext);return T_LOGICO;}
 V {printf("%11s:palavra_reservada:T_V\n", yytext);return T_V;}
 F {printf("%11s:palavra_reservada:T_F\n", yytext);return T_F;}
+
 {identificador} {printf("%11s:palavra_reservada:T_IDENTIF\n", yytext); return T_IDENTIF;}
 {numero} {printf("%11s:palavra_reservada:T_NUMERO\n", yytext);return T_NUMERO;}
-{espaco} /não faz nada/
-{novalinha} /não faz nada/
+
+
 "//".* /* comentario de linha */
 "/*" BEGIN(comentario);
 <comentario>"*/" BEGIN(INITIAL);
