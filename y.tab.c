@@ -67,7 +67,7 @@
 
 
 /* First part of user prologue.  */
-#line 3 "decl.y"
+#line 32 "decl.y"
 
     #include <stdio.h>
 
@@ -647,10 +647,10 @@ static const yytype_int8 yytranslate[] =
 /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_int8 yyrline[] =
 {
-       0,    11,    11,    14,    18,    19,    24,    25,    28,    29,
-      31,    32,    33,    34,    36,    37,    38,    39,    40,    40,
-      41,    42,    43,    44,    45,    47,    48,    49,    50,    51,
-      52,    53,    54,    55,    56,    57,    58,    59,    60,    61
+       0,    40,    40,    43,    47,    48,    53,    54,    57,    58,
+      60,    61,    62,    63,    65,    66,    67,    68,    69,    69,
+      70,    71,    72,    73,    74,    76,    77,    78,    79,    80,
+      81,    82,    83,    84,    85,    86,    87,    88,    89,    90
 };
 #endif
 
@@ -1449,7 +1449,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 63 "decl.y"
+#line 92 "decl.y"
 
 
 extern int yylex();
