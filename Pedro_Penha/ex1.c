@@ -8,10 +8,7 @@
 
 char alfabeto [NSIMBOLOS+1]="E+*ab#";
 char *regras [NREGRAS] = 
-        {"E::=+EE",
-        "E::=*EE",
-        "E::=a",
-        "E::=b"};
+{"E::=+EE",E::=*EE","E::=a","E::=b"};
 
 struct {
     char acao;
