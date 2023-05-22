@@ -77,13 +77,40 @@ fimenquanto {
     return T_FIMENQTO;
     }
 
-"+" {printf("%11s:operador_aritimético:T_MAIS\n", yytext);return T_MAIS;}
-"-" {printf("%11s:operador_aritimético:T_MENOS\n", yytext);return T_MENOS;}
-"*" {printf("%11s:operador_aritimético:T_VEZES\n", yytext);return T_VEZES;}
-"/" {printf("%11s:operador_aritimético:T_DIV\n", yytext);return T_DIV;}
-">" {printf("%11s:operador_aritimético:T_MAIOR\n", yytext);return T_MAIOR;}
-"<" {printf("%11s:operador_aritimético:T_MENOR\n", yytext);return T_MENOR;}
-"=" {printf("%11s:operador_aritimético:T_IGUAL\n", yytext);return T_IGUAL;}
+"+" {
+    printf("%11s:operador_aritimético:T_MAIS\n", yytext);
+    return T_MAIS;
+    }
+
+"-" {
+    printf("%11s:operador_aritimético:T_MENOS\n", yytext);
+    return T_MENOS;
+    }
+
+"*" {
+    printf("%11s:operador_aritimético:T_VEZES\n", yytext);
+    return T_VEZES;
+    }
+
+"/" {
+    printf("%11s:operador_aritimético:T_DIV\n", yytext);
+    return T_DIV;
+    }
+
+">" {
+    printf("%11s:operador_aritimético:T_MAIOR\n", yytext);
+    return T_MAIOR;
+    }
+
+"<" {
+    printf("%11s:operador_aritimético:T_MENOR\n", yytext);
+    return T_MENOR;
+    }
+
+"=" {
+    printf("%11s:operador_aritimético:T_IGUAL\n", yytext);
+    return T_IGUAL;
+    }
 
 ou {printf("%11s:palavra_reservada:T_OU\n", yytext);return T_OU;}
 nao {printf("%11s:palavra_reservada:T_NAO\n", yytext);return T_NAO;}
