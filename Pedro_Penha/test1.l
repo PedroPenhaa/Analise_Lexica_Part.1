@@ -32,11 +32,27 @@ fimprograma {
     printf("%11s:palavra_reservada:T_FIM\n", yytext); 
     return T_FIM;
     }
+
+leia { 
+    printf("%11s:palavra_reservada:T_LEIA\n", yytext); 
+    return T_LEIA;
+    }
     
-leia { printf("%11s:palavra_reservada:T_LEIA\n", yytext); return T_LEIA;}
-escreva {printf("%11s:palavra_reservada:T_ESCREVA\n", yytext);return T_ESCREVA;}
-se {printf("%11s:palavra_reservada:T_SE\n", yytext);return T_SE;}
-entao {printf("%11s:palavra_reservada:T_ENTAO\n", yytext);return T_ENTAO;}
+escreva {
+    printf("%11s:palavra_reservada:T_ESCREVA\n", yytext);
+    return T_ESCREVA;
+    }
+
+se {
+    printf("%11s:palavra_reservada:T_SE\n", yytext);
+    return T_SE;
+    }
+
+entao {
+    printf("%11s:palavra_reservada:T_ENTAO\n", yytext);
+    return T_ENTAO;
+    }
+    
 senao {printf("%11s:palavra_reservada:T_SENAO\n", yytext);return T_SENAO;}
 fimse {printf("%11s:palavra_reservada:T_FIMSE\n", yytext);return T_FIMSE;}
 enquanto {printf("%11s:palavra_reservada:T_ENQTO\n", yytext); return T_ENQTO;}
