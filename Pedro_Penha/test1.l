@@ -52,12 +52,30 @@ entao {
     printf("%11s:palavra_reservada:T_ENTAO\n", yytext);
     return T_ENTAO;
     }
-    
-senao {printf("%11s:palavra_reservada:T_SENAO\n", yytext);return T_SENAO;}
-fimse {printf("%11s:palavra_reservada:T_FIMSE\n", yytext);return T_FIMSE;}
-enquanto {printf("%11s:palavra_reservada:T_ENQTO\n", yytext); return T_ENQTO;}
-faca {printf("%11s:palavra_reservada:T_FACA\n", yytext);return T_FACA;}
-fimenquanto {printf("%11s:palavra_reservada:T_FIMENQTO\n", yytext);return T_FIMENQTO;}
+
+senao {
+    printf("%11s:palavra_reservada:T_SENAO\n", yytext);
+    return T_SENAO;
+    }
+fimse {
+    printf("%11s:palavra_reservada:T_FIMSE\n", yytext);
+    return T_FIMSE;
+    }
+
+enquanto {
+    printf("%11s:palavra_reservada:T_ENQTO\n", yytext); 
+    return T_ENQTO;
+    }
+
+faca {
+    printf("%11s:palavra_reservada:T_FACA\n", yytext);
+    return T_FACA;
+    }
+
+fimenquanto {
+    printf("%11s:palavra_reservada:T_FIMENQTO\n", yytext);
+    return T_FIMENQTO;
+    }
 
 "+" {printf("%11s:operador_aritimético:T_MAIS\n", yytext);return T_MAIS;}
 "-" {printf("%11s:operador_aritimético:T_MENOS\n", yytext);return T_MENOS;}
