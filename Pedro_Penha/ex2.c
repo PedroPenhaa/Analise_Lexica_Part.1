@@ -9,20 +9,17 @@
 char alfabeto [NSIMBOLOS+1]="Sacb#";
 char *regras [NREGRAS] = {"S::=aSc",
 "S::=b"};
-
 struct {
     char acao;
     int indice;
 
 }TabSint[NESTADOS][NSIMBOLOS]={
-
         'e',1, 'e',2, ' ',0, 'e',3,' ',0,
         ' ',0, ' ',0, ' ',0, ' ',0,'a',0, 
         'e',4, 'e',2, ' ',0, 'e',3,' ',0,
         ' ',0, 'r',2, 'r',2,'r',2,'r',2,
         ' ',0, ' ',0, 'e',5,' ',0,' ',0,
         ' ',0, 'r',1, 'r',1,'r',1,'r',1,
-
 };
 
 struct {
@@ -48,7 +45,6 @@ int main(){
     printf("PASSO %-30s S.R. %-15s  %s\n","PILHA ","SENTENCA","ACAO");
 
     //LINHA 174
-
     traco(79);
     while(!termino){
         if(reduzido)
@@ -129,7 +125,6 @@ void traco(int i){
 }
 
 /*Inserir substring da pos 1 ate o final de s1 na pos 2 do string s2*/
-
 void strins(char *s1, int pos1, char *s2, int pos2){
     int i, tam_s1, tam_s2;
     for(tam_s1 = 0; s1[tam_s1]; tam_s1++);
