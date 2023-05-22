@@ -118,10 +118,25 @@ nao {printf("%11s:palavra_reservada:T_NAO\n", yytext);return T_NAO;}
 "(" {printf("%11s:abre_parentese: T_ABRE\n", yytext);return T_ABRE;}
 ")" {printf("%11s:fecha_parentese: T_FECHA\n", yytext);return T_FECHA;}
 
-inteiro {printf("%11s:palavra_reservada:T_INTEIRO\n", yytext);return T_INTEIRO;}
-logico {printf("%11s:palavra_reservada:T_LOGICO\n", yytext);return T_LOGICO;}
-V {printf("%11s:palavra_reservada:T_V\n", yytext);return T_V;}
-F {printf("%11s:palavra_reservada:T_F\n", yytext);return T_F;}
+inteiro {
+    printf("%11s:palavra_reservada:T_INTEIRO\n", yytext);
+    return T_INTEIRO;
+    }
+
+logico {
+    printf("%11s:palavra_reservada:T_LOGICO\n", yytext);
+    return T_LOGICO;
+    }
+
+V {
+    printf("%11s:palavra_reservada:T_V\n", yytext);
+    return T_V;
+    }
+
+F {
+    printf("%11s:palavra_reservada:T_F\n", yytext);
+    return T_F;
+    }
 
 {identificador} {printf("%11s:palavra_reservada:T_IDENTIF\n", yytext); return T_IDENTIF;}
 {numero} {printf("%11s:palavra_reservada:T_NUMERO\n", yytext);return T_NUMERO;}
