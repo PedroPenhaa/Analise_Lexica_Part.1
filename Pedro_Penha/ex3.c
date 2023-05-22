@@ -7,7 +7,10 @@
 #define NESTADOS 7
 
 char alfabeto [NSIMBOLOS+1]="S(L)a#";
-char *regras [NREGRAS] = {"S::=(L)","S::=a","L::=L,S","L::=S"};
+char *regras [NREGRAS] = {"S::=(L)",
+"S::=a",
+"L::=L,S",
+"L::=S"};
 
 struct {
     char acao;
