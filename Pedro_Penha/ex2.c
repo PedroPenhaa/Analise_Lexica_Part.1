@@ -7,7 +7,8 @@
 #define NESTADOS 6
 
 char alfabeto [NSIMBOLOS+1]="Sacb#";
-char *regras [NREGRAS] = {"S::=aSc","S::=b"};
+char *regras [NREGRAS] = {"S::=aSc",
+"S::=b"};
 
 struct {
     char acao;
