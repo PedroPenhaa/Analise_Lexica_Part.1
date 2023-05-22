@@ -48,7 +48,6 @@ variaveis:
 declaracao_variaveis
 |
 ;
-
 declaracao_variaveis:
 tipo lista_variaveis declaracao_variaveis
 | tipo lista_variaveis
