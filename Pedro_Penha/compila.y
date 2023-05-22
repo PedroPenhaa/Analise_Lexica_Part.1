@@ -33,7 +33,6 @@
 
 %{
     #include <stdio.h>
-
     int yylex(void);
     void yyerror(char *);
 %}
@@ -49,7 +48,6 @@ variaveis:
 declaracao_variaveis
 |
 ;
-
 
 declaracao_variaveis:
 tipo lista_variaveis declaracao_variaveis
