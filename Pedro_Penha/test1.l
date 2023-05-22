@@ -13,10 +13,26 @@ void yyerror (char *);
 
 %%
 
-programa {printf("%11s:palavra_reservada:T_PROGRAMA\n", yytext); return T_PROGRAMA;}
-e { printf("%11s:palavra_reservada:T_E\n", yytext); return T_E;}
-inicio { printf("%11s:palavra_reservada:T_INICIO\n", yytext); return T_INICIO;}
-fimprograma { printf("%11s:palavra_reservada:T_FIM\n", yytext); return T_FIM;}
+programa {
+    printf("%11s:palavra_reservada:T_PROGRAMA\n", yytext); 
+    return T_PROGRAMA;
+    }
+
+e { 
+    printf("%11s:palavra_reservada:T_E\n", yytext); 
+    return T_E;
+    }
+
+inicio { 
+    printf("%11s:palavra_reservada:T_INICIO\n", yytext); 
+    return T_INICIO;
+    }
+
+fimprograma { 
+    printf("%11s:palavra_reservada:T_FIM\n", yytext); 
+    return T_FIM;
+    }
+    
 leia { printf("%11s:palavra_reservada:T_LEIA\n", yytext); return T_LEIA;}
 escreva {printf("%11s:palavra_reservada:T_ESCREVA\n", yytext);return T_ESCREVA;}
 se {printf("%11s:palavra_reservada:T_SE\n", yytext);return T_SE;}
