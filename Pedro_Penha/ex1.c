@@ -12,7 +12,6 @@ char *regras [NREGRAS] =
 "E::=*EE",
 "E::=a",
 "E::=b"};
-
 struct {
     char acao;
     int indice;
@@ -53,7 +52,6 @@ int main(){
     printf("PASSO %-30s S.R. %-15s  %s\n","PILHA ","SENTENCA","ACAO");
 
     //LINHA 174
-
     traco(79);
     while(!termino){
         if(reduzido)
@@ -134,7 +132,6 @@ void traco(int i){
 }
 
 /*Inserir substring da pos 1 ate o final de s1 na pos 2 do string s2*/
-
 void strins(char *s1, int pos1, char *s2, int pos2){
     int i, tam_s1, tam_s2;
     for(tam_s1 = 0; s1[tam_s1]; tam_s1++);
