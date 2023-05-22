@@ -149,7 +149,6 @@ F {
 <comentario>. /* nao faz nada */
 . printf ("ERRO LEXICO");
 
-
 %%
 
 int yywrap(void){
