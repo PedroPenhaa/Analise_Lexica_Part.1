@@ -143,10 +143,12 @@ F {
 
 {espaco} /*não faz nada*/
 {novalinha} /*não faz nada*/
+
 "//".* /* comentario de linha */
 "/*" BEGIN(comentario);
 <comentario>"*/" BEGIN(INITIAL);
 <comentario>. /* nao faz nada */
+
 . printf ("ERRO LEXICO");
 
 %%
